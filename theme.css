@@ -8,6 +8,8 @@
 	--oyster-shell: #4a4f50;
 	--offshore-storm: #404343;
 	--ironstone: #2b2f2f;
+	/* New darker black - may be too black */
+	--blackrock: #171818;
 
 	/* Lights */
 
@@ -21,7 +23,8 @@
 	--dark-soil: #3B2C20;
 
 	/* Blues */
-
+	/* New addition - is decent but is darker then ironstone might be too dark for the whole pallete */
+	--midnight-swell: #101116;
 	--distant-mountain: #333F4F;
 	--clear-skies: #446EA0;
 	--deep-ocean: #42647F;
@@ -47,20 +50,199 @@
 }
 
 body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
+	/* --font-text-theme:		Georgia, serif; */
+
+	--inline-title-size: 2.5em;
+
+	--h1-size: 2em;
+	--h2-size: 1.77em;
+	--h3-size: 1.57em;
+	--h4-size: 1.40em;
+	--h5-size: 1.24em;
+	--h6-size: 1.10em;
+
+	/* Edges */
+
+	--radius-s: 7px;
+	--radius-m: 7px;
+	--radius-l: 7px;
+	--input-radius: 7px;
+	--tab-radius-active: 7px;
+	--checkbox-radius: 7px;
+	--toggle-radius: 7px;
+	--toggle-thumb-radius: 7px;
+	--slider-thumb-radius: 7px;
+
+	/* Markup */
+	--bold-color: var(--clear-skies);
+	--italic-color: var(--shallows);
+
+	--link-color: var(--earth-brown);
+
+	/* Lists */
+	--checklist-done-color: var(--tidal-rock);
+
+}
+
+.theme-dark {
+	/* Backgrounds */
+
+	--background-primary: var(--blackrock);
+	--background-primary-alt: var(--midnight-swell);
+	--background-secondary: var(--ironstone);
+	--background-secondary-alt: var(--offshore-storm);
+
+	--background-modifier-hover: var(--distant-mountain);
+	--background-modifier-border: var(--offshore-storm);
+
+
+	/* Headings */
+
+	--h1-color: var(--clear-skies);
+	--h2-color: var(--eucalyptus-grove);
+	--h3-color: var(--deep-ocean);
+	--h4-color: var(--banksia);
+	--h5-color: var(--shallows);
+	--h6-color: var(--saltbrush);
+
+	--inline-title-color: var(--driftwood);
+
+	/* Body */
+	--text-normal: var(--cuttle-shell);
+	--text-muted: var(--light-sand);
+	--text-faint: var(--sand-base);
+
+	/* Markup */
+
+	--italic-color: var(--shallows);
+	--link-unresolved-color: var(--sand-yellow);
+	--text-highlight-bg: var(--deep-ocean);
+	--link-color-hover: var(--driftwood);
+
+
+	/* Table */
+
+	--table-header-background: var(--blackrock);
+	--table-header-background-hover: var(--midnight-swell);
+	--table-row-even-background: var(--ironstone);
+	--table-row-odd-background: var(--offshore-storm);
+	--table-row-background-hover: var(--distant-mountain);
+
+	--table-border: var(--oyster-shell);
+	--table-modifier-border: var(--tidal-rock);
+
+	/* Color Assignments */
+
+	--color-red: var(--shipwreck-rust);
+	--color-purple: var(--anemone);
+	--color-green: var(--saltbrush);
+	--color-cyan: var(--shallows);
+	--color-blue: var(--clear-skies);
+	--color-yellow: var(--sand-yellow);
+	--color-orange: var(--amber-shell);
+	--color-pink: var(--sunset-coral);
+}
+
+.theme-light {
+	/* Backgrounds */
+
+	--background-primary: var(--white);
+	--background-primary-alt: var(--cuttle-shell);
+	--background-secondary: var(--cuttle-shell);
+	--background-secondary-alt: var(--sand-base);
+
+	--background-modifier-hover: var(--driftwood);
+	--background-modifier-border: var(--sand-yellow);
+
+	/* Headings */
+
+	--inline-title-color: var(--earth-brown);
+
+	--h1-color: var(--distant-mountain);
+	--h2-color: var(--norfolk-pine);
+	--h3-color: var(--deep-ocean);
+	--h4-color: var(--eucalyptus-grove);
+	--h5-color: var(--shallows);
+	--h6-color: var(--saltbrush);
+
+
+	/* Body */
+
+	--text-normal: var(--ironstone);
+	--text-muted: var(--offshore-storm);
+	--text-faint: var(--oyster-shell);
+
+	/* Markup */
+
+	--link-unresolved-color: var(--driftwood);
+	--text-highlight-bg: var(--shallows);
+	--link-color-hover: var(--dark-soil);
+
+	/* Code */
+
+	--code-normal: var(--offshore-storm);
+
+	/* Table */
+
+	--table-header-background: var(--sand-base);
+	--table-header-background-hover: var(--driftwood);
+	--table-row-even-background: var(--sand-base);
+	--table-row-odd-background: var(--cuttle-shell);
+	--table-row-background-hover: var(--driftwood);
+
+	--table-border: var(--background-secondary);
+	--table-modifier-border: var(--background-modifier-border);
+
+	/* Color Assignments */
+
+	--color-red: var(--shipwreck-rust);
+	--color-purple: var(--anemone);
+	--color-green: var(--eucalyptus-grove);
+	--color-cyan: var(--clear-skies);
+	--color-blue: var(--deep-ocean);
+	--color-yellow: var(--sponge);
+	--color-orange: var(--amber-shell);
+	--color-pink: var(--sunset-coral);
+
+}
+
+table {
+	border: .15rem solid var(--table-border) !important;
+	border-collapse: collapse;
+}
+
+thead {
+	border-top: .2rem solid var(--table-modifier-border) !important;
+	border-bottom: .2rem solid var(--table-modifier-border) !important;
+}
+
+th {
+	font-weight: 600 !important;
+	border: .15rem solid var(--table-border) !important;
+}
+
+td {
+	border-left: .15rem solid var(--table-border) !important;
+	border-right: .15rem solid var(--table-border) !important;
+	border-bottom: .1rem solid var(--table-border) !important;
+}
+
+.markdown-rendered tbody tr:nth-child(even) {
+	background-color: var(--table-row-even-background) !important;
+}
+
+.markdown-rendered tbody tr:nth-child(odd) {
+	background-color: var(--table-row-odd-background) !important;
+}
+
+.markdown-rendered tbody tr:nth-child(even):hover,
+.markdown-rendered tbody tr:nth-child(odd):hover {
+	background-color: var(--table-row-background-hover) !important;
 }
 
 .workspace-tab-header.is-active::before,
 .workspace-tab-header.is-active::after {
-	display: none;
+	display: block;
 }
 
 svg * {
