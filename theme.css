@@ -1,3 +1,51 @@
+:root {
+
+	/* Neutrals */
+
+	--limestone-cliff: #bcc3c4;
+	--pebble-grey: #9ca4a6;
+	--tidal-rock: #696f70;
+	--oyster-shell: #4a4f50;
+	--offshore-storm: #404343;
+	--ironstone: #2b2f2f;
+
+	/* Lights */
+
+	--white: #ffffff;
+	--cuttle-shell: #fbf6eb;
+	--light-sand: #f8f1e1;
+	--sand-base: #f2e6cb;
+	--sand-yellow: #e4d3ab;
+	--driftwood: #B29E8E;
+	--earth-brown: #8B6F4F;
+	--dark-soil: #3B2C20;
+
+	/* Blues */
+
+	--distant-mountain: #333F4F;
+	--clear-skies: #446EA0;
+	--deep-ocean: #42647F;
+	--shallows: #819ba6;
+	--seafoam: #DEE9ED;
+
+	/* Greens */
+
+	--kelp-forest: #272815;
+	--norfolk-pine: #2A3E09;
+	--eucalyptus-grove: #556a13;
+	--banksia: #595E30;
+	--saltbrush: #849358;
+
+	/* Highlight */
+
+	--sunset-coral: #DC758F;
+	--anemone: #753c8a;
+	--shipwreck-rust: #a72607;
+	--amber-shell: #d98324;
+	--sponge: #fbbc35;
+
+}
+
 body {
 	--radius-s: 0px;
 	--radius-m: 0px;
@@ -10,7 +58,8 @@ body {
 	--slider-thumb-radius: 0px;
 }
 
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
 	display: none;
 }
 
